@@ -213,7 +213,7 @@ jshuRunTests() {
 	fi
 	for t in $_jshu_tests ; do
 	    if type -t $t &>/dev/null; then
-            cd "${_jshu_run_curdir}""
+            cd "${_jshu_run_curdir}"
             jshu_run_test $t
             rslt=$?
             if [ $rslt -eq ${jshuFAILABORT} -o $rslt -eq ${jshuERRORABORT} ]; then
